@@ -1,0 +1,27 @@
+{
+    "name": "comodojo/qotd",
+    "description": "Music's quotes to inspire your coding",
+    "license": "GPL-3.0+",
+    "type": "library",
+    "keywords": [
+        "music",
+        "quotes",
+        "comodojo"
+    ],
+    "homepage": "http://www.comodojo.org",
+     "support": {
+        "issues": "https://github.com/comodojo/qotd/issues"
+    },
+    "authors": [
+        {
+            "name": "Marco Giovinazzi",
+            "email": "info@comodojo.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Comodojo\\Qotd\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
