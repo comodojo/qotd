@@ -1,5 +1,5 @@
 <?php namespace Comodojo\Qotd;
- 
+
 /** 
  * Music's quotes to inspire your coding
  *
@@ -25,50 +25,50 @@
 
 class Qotd {
 
-	private $quotes = null;
+    private $quotes = null;
 
-	private $no_quotes_message = "Sorry, no music for you today";
+    private $no_quotes_message = "Sorry, no music for you today";
 
-	public function __construct() {
+    public function __construct() {
 
-		$quotes = file_get_contents('..resources/quotes');
+        $quotes = file_get_contents('../resources/quotes');
 
-		if ( $quotes === false ) return;
+        if ( $quotes === false ) return;
 
-		$quotes_array = explode("\n",$comodojo_quotes);
-	
-		array_shift($quotes_array);
+        $quotes_array = explode("\n",$quotes);
+        
+        array_shift($quotes_array);
 
-		$this->quotes = $quotes_array;
+        $this->quotes = $quotes_array;
 
-	}
+    }
 
-	public function getQuotes() {
+    public function getQuotes() {
 
-		if ( is_null($this->quotes) ) return array($this->no_quotes_message);
+        if ( is_null($this->quotes) ) return array($this->no_quotes_message);
 
-		return $this->quotes;
+        return $this->quotes;
 
-	}
+    }
 
-	public function getQoute() {
+    public function getQuote() {
 
-		if ( is_null($this->quotes) ) return $this->no_quotes_message;
+        if ( is_null($this->quotes) ) return $this->no_quotes_message;
 
-		return $this->quotes[rand(1,sizeof($this->quotes)-1)];
+        return $this->quotes[rand(1,sizeof($this->quotes)-1)];
 
-	}
+    }
 
-	public function getQoutesAsStore() {
+    public function getQuotesAsStore() {
 
-		if ( is_null($this->quotes) ) return array(array('id'=>0, 'quote'=>$this->no_quotes_message));
+        if ( is_null($this->quotes) ) return array(array('id'=>0, 'quote'=>$this->no_quotes_message));
 
-		$return = array();
-	
-		foreach($this->quotes as $id=>$quote) array_push($return, array('id'=>$id, 'quote'=>$quote));
+        $return = array();
+        
+        foreach($this->quotes as $id=>$quote) array_push($return, array('id'=>$id, 'quote'=>$quote));
 
-		return $return;
+        return $return;
 
-	}
+    }
 
 }
