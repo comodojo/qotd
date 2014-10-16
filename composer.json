@@ -1,6 +1,6 @@
 {
     "name": "comodojo/qotd",
-    "description": "Music's quotes to inspire your coding",
+    "description": "Music quotes to inspire your coding",
     "license": "GPL-3.0+",
     "type": "library",
     "keywords": [

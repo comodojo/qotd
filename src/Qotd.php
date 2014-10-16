@@ -1,7 +1,7 @@
 <?php namespace Comodojo\Qotd;
 
 /** 
- * Music's quotes to inspire your coding
+ * Music quotes to inspire your coding
  *
  * @package     Comodojo Spare Parts
  * @author      Marco Giovinazzi <info@comodojo.org>
