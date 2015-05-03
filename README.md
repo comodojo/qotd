@@ -7,54 +7,54 @@ Music's quotes to inspire your coding
 
 It is a component used in comodojo to generate random text for tests or error messages.
 
-It generate random music quotes reading `resources/quotes` file; a quote is a string in a single line of quotes file.
+It gets music quotes from file `resources/quotes`, where each line represent a single quote.
 
 ## Installation
 
--	Using composer:
+-   Using composer:
 
-	``composer require comodojo/qotd dev-master``
+    ``composer require comodojo/qotd 1.*``
 
-- 	Downloading zip from GitHub
+-   Downloading zip from GitHub
 
-	Extract zip & include `src/Qotd.php` in your file.
+    Extract zip & include `src/Qotd.php` in your file.
 
 ## Usage
 
--	Getting a simple random quote:
+-   Getting a simple random quote:
 
-	```php
-	
-	// create an instance
-	$qotd = new \Comodojo\Qotd();
-	
-	// get a single quote
-	$log->getQuote();
+    ```php
+    
+    // create an instance
+    $qotd = new \Comodojo\Qotd();
+    
+    // get a single quote
+    $quote = $qotd->getQuote();
 
-	```
--	Getting all quotes as array:
+    ```
+-   Getting all quotes as array:
 
-	```php
-	
-	// create an instance
-	$qotd = new \Comodojo\Qotd();
-	
-	// get all quotes
-	$log->getQuotes();
+    ```php
+    
+    // create an instance
+    $qotd = new \Comodojo\Qotd();
+    
+    // get all quotes
+    $array_of_quotes = $qotd->getQuotes();
 
-	```
+    ```
 
--	Getting all quotes in id/quote store form (useful for client-side stores test):
+-   Getting all quotes in id/quote store form (useful for client-side stores test):
 
-	```php
-	
-	// create an instance
-	$qotd = new \Comodojo\Qotd();
-	
-	// get all quotes
-	$log->getQuotesAsStore();
+    ```php
+    
+    // create an instance
+    $qotd = new \Comodojo\Qotd();
+    
+    // get all quotes
+    $array_of_quotes = $qotd->getQuotesAsStore();
 
-	```
+    ```
 
 ## Contributing
 

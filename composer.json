@@ -23,5 +23,7 @@
             "Comodojo\\Qotd\\": "src"
         }
     },
-    "minimum-stability": "dev"
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    }
 }

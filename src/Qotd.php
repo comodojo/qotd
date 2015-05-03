@@ -25,13 +25,28 @@
 
 class Qotd {
 
+    /**
+     * Quotes repo
+     * 
+     * @var array
+     */
     private $quotes = null;
 
+    /**
+     * No quote message
+     * 
+     * @var string
+     */
     private $no_quotes_message = "Sorry, no music for you today";
 
+    /**
+     * Load quotes
+     *
+     * @return  Object  $this
+     */
     public function __construct() {
 
-        $quotes = file_get_contents('../resources/quotes');
+        $quotes = file_get_contents( __DIR__ . '/../resources/quotes');
 
         if ( $quotes === false ) return;
 
@@ -43,6 +58,11 @@ class Qotd {
 
     }
 
+    /**
+     * Get all quotes
+     *
+     * @return  array
+     */
     public function getQuotes() {
 
         if ( is_null($this->quotes) ) return array($this->no_quotes_message);
@@ -51,6 +71,11 @@ class Qotd {
 
     }
 
+    /**
+     * Get single quote
+     *
+     * @return  string
+     */
     public function getQuote() {
 
         if ( is_null($this->quotes) ) return $this->no_quotes_message;
@@ -59,6 +84,11 @@ class Qotd {
 
     }
 
+    /**
+     * Get all quotes as a store
+     *
+     * @return  array
+     */
     public function getQuotesAsStore() {
 
         if ( is_null($this->quotes) ) return array(array('id'=>0, 'quote'=>$this->no_quotes_message));
