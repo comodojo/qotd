@@ -33,12 +33,12 @@ class QuotesTest extends \PHPUnit_Framework_TestCase {
         $this->assertInternalType('array', $results);
 
         foreach ($results as $result) {
-        	
-        	$this->assertInternalType('array', $result);
+            
+            $this->assertInternalType('array', $result);
 
-        	$this->assertArrayHasKey("id", $result);
+            $this->assertArrayHasKey("id", $result);
 
-        	$this->assertArrayHasKey("quote", $result);
+            $this->assertArrayHasKey("quote", $result);
 
         }
 

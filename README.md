@@ -1,5 +1,6 @@
-qotd
-====
+## comodojo/qotd
+
+[![Build Status](https://api.travis-ci.org/comodojo/qotd.png)](http://travis-ci.org/comodojo/qotd) [![Latest Stable Version](https://poser.pugx.org/comodojo/qotd/v/stable)](https://packagist.org/packages/comodojo/qotd) [![Total Downloads](https://poser.pugx.org/comodojo/qotd/downloads)](https://packagist.org/packages/comodojo/qotd) [![Latest Unstable Version](https://poser.pugx.org/comodojo/qotd/v/unstable)](https://packagist.org/packages/comodojo/qotd) [![License](https://poser.pugx.org/comodojo/qotd/license)](https://packagist.org/packages/comodojo/qotd)
 
 Music's quotes to inspire your coding
 

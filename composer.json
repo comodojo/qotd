@@ -1,14 +1,14 @@
 {
     "name": "comodojo/qotd",
     "description": "Music quotes to inspire your coding",
-    "license": "GPL-3.0+",
+    "license": "MIT",
     "type": "library",
     "keywords": [
         "music",
         "quotes",
         "comodojo"
     ],
-    "homepage": "http://www.comodojo.org",
+    "homepage": "http://comodojo.org",
      "support": {
         "issues": "https://github.com/comodojo/qotd/issues"
     },
