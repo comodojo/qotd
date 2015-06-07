@@ -57,6 +57,14 @@ It gets music quotes from file `resources/quotes`, where each line represent a s
 
     ```
 
+## Documentation
+
+- [API](https://api.comodojo.org/libs/Comodojo/Qotd.html)
+
 ## Contributing
 
 Fell free to add quotes forking this repo, editing `resources/quotes` and submitting a pull request.
+
+## License
+
+`` comodojo/qotd `` is released under the MIT License (MIT). Please see [License File](LICENSE) for more information.
