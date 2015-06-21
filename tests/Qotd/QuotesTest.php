@@ -1,4 +1,4 @@
-<?php namespace Comodojo\Qotd\Tests;
+<?php
 
 class QuotesTest extends \PHPUnit_Framework_TestCase {
 
